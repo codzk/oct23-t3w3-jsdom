@@ -54,12 +54,22 @@ function createAnimalList(){
 function removeAnimalFromList(targetAnimalId){
     // 1. find element in list with matching ID
     let targetListItem = document.getElementById(targetAnimalId);
+
     targetListItem.remove();
     
 
     // 2. Check if ID is in array of animals
     let isAnimalInList = animals.includes(targetAnimalId);
-    if (!isAnimalInList) return;
+    // if (!isAnimalInList) return;
+
+    if (isAnimalInList){
+    
+    } else {
+        return;
+    }
+
+
+
 
     // 3. Remove the animal from the array
     animals = animals.filter(animal => {
