@@ -111,6 +111,9 @@ function addAnimalToList(event, targetInputId){
 
     animals.push(foundInputFieldValue);
 
+    // 3.5 reset the input field
+    targetInputField.value = "";
+
     // 4. Recreate the animal list
 
     createAnimalList();
